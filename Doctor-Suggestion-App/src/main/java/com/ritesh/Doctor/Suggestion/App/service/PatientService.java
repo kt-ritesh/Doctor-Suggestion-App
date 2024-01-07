@@ -51,7 +51,7 @@ public class PatientService {
             if(doctors.isEmpty()) return "Currently doctors are not available.";
             return "You should contact with this doctor:"+doctors.toString();
         }
-        if(patient.getSymptom().equals("Dysmenorrhea")){
+        if(patient.getSymptom().equals("Dermatology")){
             List<Doctor> doctors = iDoctorRepo.findAllBySpecialityAndCity("Gynecology", patient.getCity());
             if(doctors.isEmpty()) return "Currently doctors are not available.";
             return "You should contact with this doctors:"+doctors.toString();

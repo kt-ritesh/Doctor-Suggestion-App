@@ -1,0 +1,616 @@
+{
+	"info": {
+		"_postman_id": "1b506752-8f0e-446a-ba99-3e3991fdb903",
+		"name": "Doctor Suggestion App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27811242",
+		"_collection_link": "https://www.postman.com/supply-technologist-99394107/workspace/practice-springboot/collection/27811242-1b506752-8f0e-446a-ba99-3e3991fdb903?action=share&source=collection_link&creator=27811242"
+	},
+	"item": [
+		{
+			"name": "add Doctor",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"<long>\",\n  \"mobNo\": \"<string>\",\n  \"city\": \"<string>\",\n  \"speciality\": \"<string>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add/doctor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"doctor"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"mobNo\": \"<string>\",\n  \"city\": \"<string>\",\n  \"speciality\": \"<string>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/add/doctor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"add",
+								"doctor"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "update Patient Symptom",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/update/patient/symptom?patient_id=<long>&symptom=<string>",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update",
+						"patient",
+						"symptom"
+					],
+					"query": [
+						{
+							"key": "patient_id",
+							"value": "<long>",
+							"description": "(Required) "
+						},
+						{
+							"key": "symptom",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/update/patient/symptom?patient_id=<long>&symptom=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"update",
+								"patient",
+								"symptom"
+							],
+							"query": [
+								{
+									"key": "patient_id",
+									"value": "<long>",
+									"description": "(Required) "
+								},
+								{
+									"key": "symptom",
+									"value": "<string>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "update Patient City",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/update/patient/city?patient_id=<long>&city=<string>",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"update",
+						"patient",
+						"city"
+					],
+					"query": [
+						{
+							"key": "patient_id",
+							"value": "<long>",
+							"description": "(Required) "
+						},
+						{
+							"key": "city",
+							"value": "<string>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/update/patient/city?patient_id=<long>&city=<string>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"update",
+								"patient",
+								"city"
+							],
+							"query": [
+								{
+									"key": "patient_id",
+									"value": "<long>",
+									"description": "(Required) "
+								},
+								{
+									"key": "city",
+									"value": "<string>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "add Patient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"city\": \"<string>\",\n  \"id\": \"<long>\",\n  \"mobNo\": \"<string>\",\n  \"symptom\": \"<string>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/add/patient",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add",
+						"patient"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"city\": \"<string>\",\n  \"id\": \"<long>\",\n  \"mobNo\": \"<string>\",\n  \"symptom\": \"<string>\",\n  \"name\": \"<string>\",\n  \"email\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/add/patient",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"add",
+								"patient"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "doctor Suggestion",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/doctor/suggestion?patient_id=<long>",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctor",
+						"suggestion"
+					],
+					"query": [
+						{
+							"key": "patient_id",
+							"value": "<long>",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/doctor/suggestion?patient_id=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"doctor",
+								"suggestion"
+							],
+							"query": [
+								{
+									"key": "patient_id",
+									"value": "<long>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "delete Patient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/delete/patient?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"patient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"description": "(Required) "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/delete/patient?id=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete",
+								"patient"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<long>",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "remove Doctor",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/delete/doctor/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"doctor",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/delete/doctor/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete",
+								"doctor",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "<string>"
+				}
+			]
+		},
+		{
+			"name": "get All Doctors",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/doctors",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"doctors"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/doctors",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"doctors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "*/*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n  {\n    \"id\": \"<long>\",\n    \"mobNo\": \"<string>\",\n    \"city\": \"<string>\",\n    \"speciality\": \"<string>\",\n    \"name\": \"<string>\",\n    \"email\": \"<string>\"\n  },\n  {\n    \"id\": \"<long>\",\n    \"mobNo\": \"<string>\",\n    \"city\": \"<string>\",\n    \"speciality\": \"<string>\",\n    \"name\": \"<string>\",\n    \"email\": \"<string>\"\n  }\n]"
+				}
+			]
+		}
+	]
+}
